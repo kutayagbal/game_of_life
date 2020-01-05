@@ -1,0 +1,54 @@
+<html>
+  <body style="background-color: black;" onload="onLoad()">
+    <label id="totalPoints" style="color: white;">0</label>
+    &nbsp;
+    <input
+      type="number"
+      id="row"
+      style="background-color: cadetblue; width: 40;"
+      type="text"
+    />
+    <input
+      type="number"
+      id="col"
+      style="background-color: cadetblue; width: 40;"
+      type="text"
+    />
+    <br />
+    <br />
+    <button onclick="addPoint()" style="background-color: olivedrab;">
+      ADD
+    </button>
+    &nbsp;&nbsp;&nbsp;
+    <button
+      onclick="addPoint()"
+      tabindex="-1"
+      style="background-color: lightsalmon;"
+    >
+      REMOVE
+    </button>
+    <br />
+    <br />
+    <button
+      onclick="loop()"
+      tabindex="-1"
+      style="background-color: darkmagenta; height: 50;"
+    >
+      DRAW
+    </button>
+    &nbsp;
+    <button
+      onclick="stop()"
+      tabindex="-1"
+      style="background-color: darkred; height: 50;"
+    >
+      STOP
+    </button>
+    <canvas
+      id="myCanvas"
+      style="border-style: solid;
+    border-color: #444446;"
+    />
+  </body>
+  <script type="text/javascript" src="./gameOfLife.js"></script>
+</html>
